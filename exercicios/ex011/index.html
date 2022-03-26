@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel"><!--usando a tag 'picure'.colocamos imagens dentro do site e com a tag 'source'a imagem se alinha de acordo com o tamanho de tela disponivel ex:celular,computador e tv-->
+
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+   <!--formatos compatíveis MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/belivie.mp3" type="audio/mpeg">
+        <source src="media/belivie.mp3" type="audio/ogg">
+        <source src="media/belivie.mp3" type="audio/wav"><!--nao usa wav pq da ruim-->
+        <p>infelizmente seu navegador nao consegue reproduzir o áudio <a href="media/guanacast-33.mp3">clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
