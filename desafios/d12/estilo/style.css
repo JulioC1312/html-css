@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    min-height: 100%;
+    background-color: darkgray;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px;
+    /*text-transform: uppercase;/*deixa tudo em letra maiuscula*/
+
+    font-variant: small-caps;/*todas elas ficam em formato maiusculo mas a primeira letra fica maior*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;/*espaçamento entre as frases*/
+    padding-left: 30px ;
+}/*para fazer o efeito com as imagens*/
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 400px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
