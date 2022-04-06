@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;  
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html,body{
     min-height: 100%;
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
@@ -22,6 +34,8 @@ header>h1{
     /*text-transform: uppercase;/*deixa tudo em letra maiuscula*/
 
     font-variant: small-caps;/*todas elas ficam em formato maiusculo mas a primeira letra fica maior*/
+    font-family: var(--fonte2);
+    font-size: 10vw;/*conforme o tamanho do aparelho ele vai se adequando com o tamanho de fonte*/
 }
 
 header > p{
@@ -43,6 +57,8 @@ section{
     padding-bottom: 10%;
     line-height: 2em;/*espaçamento entre as frases*/
     padding-left: 30px ;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }/*para fazer o efeito com as imagens*/
 
 section.normal{
@@ -56,8 +72,10 @@ section.imagem{
 }
 
 section.imagem>p{
+    display: inline-block;/*caixa que se adapta ao tamanho do conteudo*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.226);
-    width: 400px;
+   
 
 }
 
